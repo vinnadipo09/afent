@@ -10,9 +10,9 @@ app.use(cors())
 
 // http requests include get, put, post, patch, delete
 
-app.get('/status', (req, res) => {
+app.post('/register', (req, res) => {
   res.send({
-    message: 'The setup is running correctly!'
+    message: `Hello ${req.body.email}, the registration was successful`
   })
 })
 
